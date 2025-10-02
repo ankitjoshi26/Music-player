@@ -128,7 +128,23 @@ progress_div.addEventListener("click", (event) => {
     const { duration } = music;
     let move_progress = (event.offsetX / event.target.clientWidth) * duration;
     music.currentTime = move_progress;
+
+    // Disable transition temporarily
+    progress.style.transition = "none";
+
+    // Update progress width immediately
+    let progress_bar = (move_progress / duration) * 100;
+    progress.style.width = `${progress_bar}%`;
+
+    // Update current time display immediately
+    current_Time.textContent = formatTime(move_progress);
+
+    // Re-enable transition after a tiny delay
+    setTimeout(() => {
+        progress.style.transition = "width 0.3s linear";
+    }, 50);
 });
+
 
 music.addEventListener("ended", nextSong); // for next song after completing current playing song
 
