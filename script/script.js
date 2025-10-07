@@ -27,7 +27,6 @@ const songs = [
   { songName: "Dapper Dan - Navaan Sandhu", title: "dapper don", artist: "navaan sandhu", img: "navaan" },
   { songName: "dearmama", title: "dearmama", artist: "Sidhu Moose Wala", img: "sidhu" },
   { songName: "devil", title: "devil", artist: "Sidhu Moose Wala", img: "sidhu" },
-  { songName: "Devnagari", title: "devnagari", artist: "Aniket Raturi & Dakait", img: "devnagari" },
   { songName: "dhakka", title: "dhakka", artist: "Sidhu Moose Wala", img: "sidhu" },
   { songName: "C Walk - Navaan Sandhu", title: "c walk", artist: "Navaan Sandhu", img: "navaan" },
   { songName: "drippy", title: "drippy", artist: "Sidhu Moose Wala", img: "sidhu" },

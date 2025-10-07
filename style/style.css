@@ -245,10 +245,10 @@
 .footer p{
     font-size: 0.6rem;
     font-family: "Jost", sans-serif;
-    color: #413f3f;
+    color: #cccaca;
 }
 .footer a{
-  color: silver;
+  color: #cccaca;
   text-decoration: none;
   font-weight: 500;
   font-size: 0.6rem;
