@@ -17,6 +17,7 @@
             </div>
             <audio src="./Songs/Ontop.mp3"></audio>
 
+
         <!-- progressbar -->
          <div class="progressbar_container" id="progress_container">
            <div class="progress_duration_meter">
@@ -30,10 +31,29 @@
 
             <!-- controls -->
              <div class="music_controls">
+                <i class="fa-solid fa-volume-high" id="volume"></i>
                 <i class="fas fa-backward" id="prev" title="Previous"></i>
                 <i class="fas fa-play main-button" id="play" title="Play"></i>
                 <i class="fas fa-forward" id="next" title="Next"></i>
+                <img id="playlistImg" src="./images/playlist.png" title="playlist" alt="Playlist">
              </div>
+
+            <!-- playlist -->
+             <div class="playlist-container hidden" id="playlist">
+                <h3>Playlist</h3>
+                <input type="search" placeholder="search song" id="searchInput" >
+                <ul id="playlistSongs">
+                    <!-- songs -->
+                     <!-- for showing no result found -->
+                     <li id="noResult" style="display: none;">No result found</li>  
+                </ul>
+            </div>
+
+             <div class="footer">
+               <p>©2025 Ankit Joshi.All Rights Reserved.</p>
+               <a href="https://www.instagram.com/ankit.joshi26/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+             </div>
+
         </div>
     </div>
     <script src="script.js"></script>
